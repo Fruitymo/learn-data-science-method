@@ -1,10 +1,6 @@
+#code to read online book
 import urllib3
 http = urllib3.PoolManager()
-read = http.request('GET', 'https://www.inferentialthinking.com/data/little_women.txt')
-read_type = type(read)
-print(read.data)
-
-
-#print(read_content)
-#read_content = read_content.decode('utf-8')
-#print(read_content)
+book = http.request('GET', 'https://www.inferentialthinking.com/data/little_women.txt')
+read_book_content = book.data
+print(read_book_content)
