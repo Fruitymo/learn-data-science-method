@@ -3,8 +3,9 @@
 import urllib3
 http = urllib3.PoolManager()
 little_women_url = 'https://www.inferentialthinking.com/data/little_women.txt'
-#little_women_text = print(little_women_url)
-little_women_text = http.request('GET','https://www.inferentialthinking.com/data/little_women.txt') #returns http request 200 if all is ok
+
+#returns http request 200 if all is ok
+little_women_text = http.request('GET','https://www.inferentialthinking.com/data/little_women.txt') 
 
 #read the whole book
 little_women_text_content = little_women_text.read()
