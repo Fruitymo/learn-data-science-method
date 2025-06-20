@@ -18,3 +18,14 @@ Once ```urllib3``` is installed the ```import urllib3``` should excute without e
 ### Running python code in Jupyter notebook vs Python scripts on commandline
 
 [Version 1.76 of visual studio code](https://code.visualstudio.com/updates/v1_76) comes with Interactive Window, so for people who are not familiar with working with Jupyter notebooks, they can simply run the python files in visual studio code or straight from command line using the following shell command: ```python ReadNewOnlineBook.py ```
+
+### 20 June 2025 update:
+If you get an error running the ```import urllib3``` check first that you are in comand prompt in vscode or windows terminal as PowerShell terminal does not recognize python syntax.
+
+Alternatively, you can create a new ReadBooksOnline.py file, and add your python code in there eg: 
+```
+import urllib3
+# your code here
+```
+then run it in terminal:
+``` python ReadBooksOnline.py ```
